@@ -8,9 +8,9 @@ const dbConfig = {
   };
 
   async function connectDatabase() {
-    // oracledb.initOracleClient({
-    //   // initialization configuration
-    // });
+    oracledb.initOracleClient({
+      // initialization configuration
+    });
   
     try {
       await oracledb.createPool(dbConfig);
